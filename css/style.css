@@ -3,6 +3,7 @@
   --hover-text-color: #2196f3;
   --title-text-color: #757575;
   --light-tetx-color: #ffffff;
+  --title-text-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -12,6 +13,9 @@ body {
 /*--- Навигация по сайту---*/
 .logo {
   color: var(--primary-text-color);
+}
+.logo .word-blue {
+  color: var(--hover-text-color);
 }
 .logo:hover {
   color: var(--hover-text-color);
@@ -44,6 +48,10 @@ body {
 .list {
   color: #212121;
 }
+.link {
+  cursor: pointer;
+}
+
 /*---Герой---*/
 .hero-title {
   color: var(--primary-text-color);
@@ -82,6 +90,16 @@ body {
 }
 
 /*---Подвал---*/
+.more .nav-more {
+  text-decoration: none;
+}
+.more .nav-more {
+  color: var(--title-text-footer);
+}
+
+.more .nav-more:hover {
+  color: var(--hover-text-color);
+}
 
 /* цвет текста hover #2196F3;  */
 /* основной цвет текста #212121; */
