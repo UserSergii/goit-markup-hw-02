@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -45,30 +52,32 @@
       </section>
 
       <!--Особенности-->
-      <section class="speciality">
-        <h2 class="speciality-title">Особенности</h2>
+      <section>
+        <!---Заголовок нужно скрыть-->
+        <h2 class="modal">Особенности</h2>
+        <!---Заголовок нужно скрыть-->
         <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
-            <p class="title">
+            <h3 class="caption">Внимание к деталям</h3>
+            <p class="desc">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li>
-            <h3 class="">Пунктуальность</h3>
-            <p class="title">
+            <h3 class="caption">Пунктуальность</h3>
+            <p class="desc">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li>
-            <h3 class="">Планирование</h3>
-            <p class="title">
+            <h3 class="caption">Планирование</h3>
+            <p class="desc">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li>
-            <h3 class="">Современные технологии</h3>
-            <p class="title">
+            <h3 class="caption">Современные технологии</h3>
+            <p class="desc">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
@@ -79,9 +88,7 @@
       <section>
         <ul class="list">
           <li>
-            <!---Заголовок нужно скрыть-->
-            <h2>Чем мы занимаемся</h2>
-            <!---Заголовок нужно скрыть-->
+            <h2 class="subtitle">Чем мы занимаемся</h2>
           </li>
           <li>
             <img src="./images/img.jpg" alt="Верстка" height="294" width="370" />
@@ -97,7 +104,7 @@
 
       <!--Наша команда-->
       <section>
-        <h2 class="workers">Наша команда</h2>
+        <h2 class="subtitle">Наша команда</h2>
         <ul class="list">
           <li>
             <img
@@ -106,43 +113,43 @@
               height="260"
               width="270"
             />
-            <h3 class="workers-name">ИгорьДмитриенко</h3>
-            <p class="workers-post" lang="en">Product Designer</p>
+            <h3 class="subtitle-name">ИгорьДмитриенко</h3>
+            <p class="subtitle-post" lang="en">Product Designer</p>
           </li>
         </ul>
         <ul class="list">
           <li>
             <img src="./images/olga-repina.jpg" alt="ОльгаРепина" height="260" width="270" />
-            <h3 class="workers-name">ОльгаРепина</h3>
-            <p class="workers-post" lang="en">Frontend Developer</p>
+            <h3 class="subtitle-name">ОльгаРепина</h3>
+            <p class="subtitle-post" lang="en">Frontend Developer</p>
           </li>
         </ul>
         <ul class="list">
           <li>
             <img src="./images/nikolai-tarasov.jpg" alt="НиколайТарасов" height="260" width="270" />
-            <h3 class="workers-name">НиколайТарасов</h3>
-            <p class="workers-post" lang="en">Marketing</p>
+            <h3 class="subtitle-name">НиколайТарасов</h3>
+            <p class="subtitle-post" lang="en">Marketing</p>
           </li>
         </ul>
         <ul class="list">
           <li>
             <img src="./images/mihail-ermakov.jpg" alt="Михаил Ермаков" height="260" width="270" />
-            <h3 class="workers-name">Михаил Ермаков</h3>
-            <p class="workers-post" lang="en">UI Designer</p>
+            <h3 class="subtitle-name">Михаил Ермаков</h3>
+            <p class="subtitle-post" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
     <!---Подвал-->
-    <footer>
-      <a class="logo" href="/"><span class="word-blue">Web</span>Studio</a>
+    <footer class="all">
+      <a class="logo" href="/">Web<span class="word-white">Studio</span></a>
       <address>
-        <p class="">
+        <p class="more-list">
           г. Киев, <br />
           Бульвар Леси Украинки, д. 26, <br />
         </p>
-        <ul class="more list">
+        <ul>
           <li>
             <a class="nav-more" href="mailto:info@example.com">info@example.com</a>
           </li>

@@ -4,15 +4,23 @@
   --title-text-color: #757575;
   --light-tetx-color: #ffffff;
   --title-text-footer: rgba(255, 255, 255, 0.6);
+  --portfolio-button: #f5f4fa;
 }
 
 body {
   color: var(--primary-text-color);
   background-color: #ffffff;
+
+  font-family: Roboto, sans-serif;
 }
 /*--- Навигация по сайту---*/
 .logo {
   color: var(--primary-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .logo .word-blue {
   color: var(--hover-text-color);
@@ -20,7 +28,7 @@ body {
 .logo:hover {
   color: var(--hover-text-color);
 }
-.list {
+ul {
   list-style: none;
 }
 .site-nav .link,
@@ -35,6 +43,11 @@ body {
 }
 .site-nav .link {
   color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav .nav:hover,
@@ -43,18 +56,33 @@ body {
 }
 .auth-nav .nav {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .list {
   color: #212121;
 }
-.link {
+/*.link {
   cursor: pointer;
-}
+}*/
 
 /*---Герой---*/
 .hero-title {
   color: var(--primary-text-color);
+}
+
+.hero-title {
+  /*color: var(--light-tetx-color);*/
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /*---Кнопка---*/
 .bth {
@@ -62,52 +90,141 @@ body {
 }
 .bth {
   color: var(--light-tetx-color);
+
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .bth:hover,
+:focus {
+  color: var(--primary-text-color);
+}
+
+/*---Особенности---*/
+.modal {
+  visibility: hidden;
+}
+.desc {
+  color: var(--title-text-color);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/*---Примеры робот,Наша команда---*/
+
+.subtitle {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.subtitle-name {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.subtitle-post {
+  color: var(--title-text-color);
+
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/*---Подвал---*/
+
+/*.logo .word-white {
+  color: var(--light-tetx-color);
+}*/
+.nav-more {
+  text-decoration: none;
+}
+.nav-more {
+  /*color: var(--title-text-footer);*/
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.nav-more:hover,
 :focus {
   color: var(--hover-text-color);
 }
 
-/*---Особенности---*/
-
-.speciality-title {
-  color: var(--primary-text-color);
+.all .more-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.title {
+.all .nav-more {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*----СТРАНИЦА ПОРТФОЛИО---*/
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--portfolio-button);
+
+  font-family: 'Roboto';
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+.button:hover {
+  color: var(--light-tetx-color);
+  background-color: var(--hover-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.features {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.benefits {
   color: var(--title-text-color);
-}
 
-/*---Наша команда---*/
-
-.workers {
-  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
-.workers-name {
-  color: var(--primary-text-color);
-}
-.workers-post {
-  color: var(--title-text-color);
-}
-
-/*---Подвал---*/
-.more .nav-more {
-  text-decoration: none;
-}
-.more .nav-more {
-  color: var(--title-text-footer);
-}
-
-.more .nav-more:hover {
-  color: var(--hover-text-color);
-}
-
-/* цвет текста hover #2196F3;  */
-/* основной цвет текста #212121; */
-/* цвет текста mine #FFFFFF; */
-/* цвет текста P #757575;*/
-/* цвет текста адрес+тел footer 
-color: rgba(255, 255, 255, 0.6); */
-/* цвет фона первичный-hader #FFFFFF; */
-/* цвет фона main #E5E5E5; */
-/* цвет фона footer #2F303A; */
-/* цвет logo  "Web" #2196F3 , Studio "#212121;" */
