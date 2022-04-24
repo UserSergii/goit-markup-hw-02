@@ -50,13 +50,15 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.auth-nav .nav:hover,
-.auth-nav .nav:focus {
+.auth-nav a:hover,
+:focus {
   color: var(--hover-text-color);
 }
+
 .auth-nav .nav {
   color: var(--title-text-color);
-
+  text-decoration: none;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -157,40 +159,19 @@ ul {
 
 /*---Подвал---*/
 
-/*.logo .word-white {
-  color: var(--light-tetx-color);
-}*/
-.nav-more {
-  text-decoration: none;
-}
-.nav-more {
-  /*color: var(--title-text-footer);*/
+.all .auth-nav a {
+  color: var(--title-text-color);
 
+  font-style: normal;
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 }
-
-.nav-more:hover,
+.all .auth-nav a:hover,
 :focus {
   color: var(--hover-text-color);
-}
-
-.all .more-list {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-.all .nav-more {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /*----СТРАНИЦА ПОРТФОЛИО---*/
